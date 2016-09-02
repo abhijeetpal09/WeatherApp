@@ -10,6 +10,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <provider
+            android:name="com.example.abhijeet_pal.weather.data.WeatherProvider"
+            android:authorities="com.example.abhijeet_pal.weather">
+
+        </provider>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
