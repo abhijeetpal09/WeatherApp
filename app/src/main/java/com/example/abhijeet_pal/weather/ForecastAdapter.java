@@ -18,6 +18,7 @@ public class ForecastAdapter extends CursorAdapter {
     private final int VIEW_TYPE_TODAY = 0;
     private final int VIEW_TYPE_FUTURE_DAY = 1;
 
+
     private boolean mUseTodayLayout = true;
 
 
@@ -51,13 +52,8 @@ public class ForecastAdapter extends CursorAdapter {
         return 2;
     }
 
-    /*
-        This is ported from FetchWeatherTask --- but now we go straight from the cursor to the
-        string.
 
-    /*
-        Remember that these views are reused as needed.
-     */
+
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
 
